@@ -1,0 +1,162 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body {
+    margin: 0;
+    background-image: url(../css/images.jpg);
+}
+nav {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(165, 182, 182);
+    position: fixed;
+    padding: 10px;
+    float: left;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+nav a:hover {
+    color: aquamarine;
+    text-decoration: underline;
+    /* background-color: rgba(39, 34, 34, 0.5); */
+    transition: ease-in-out 1s;
+    animation: fade 5s;
+}
+.Brand {
+    float: left;
+    padding-left: 20px;
+}
+.book-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 50px;
+    flex-wrap: wrap;
+}
+.book-container .card {
+    background-color: rgba(66, 65, 63, 0.5);
+    width: 250px;
+    height: auto;   
+    margin: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.book-cover {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+}
+.book-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+
+}
+.book-info p {
+    padding: 0 10px;
+    text-align: center;
+}
+.book-info .read-more {
+    display: none;
+}
+.buttons {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    /* height: 50px; */
+
+}
+.btn-cart {
+    background-color: whitesmoke;
+    text-decoration: none;
+    flex: 3;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 10px;
+}
+.btn-wishlist {
+    background-color: whitesmoke;
+    text-decoration: none;
+    flex: 2;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-buy {
+    background-color: rgb(25, 189, 25);
+    text-decoration: none;
+    flex: 2;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 10px 0;
+}
+.buttons i {
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+  
+@media (max-width: 540px) {
+    body {
+        background-color: rgb(53, 82, 72);
+    } 
+    .Brand {
+        width: 100%;
+        float: left;
+    }
+    .HACUL {
+        display: none;
+    }
+    .book-container {
+        flex-direction: column;
+        align-items: center;
+        /* font-size: 14px; */
+    }
+    .book-container .card {
+        flex-direction: row;
+        height: auto;
+        width: 90%;
+    }
+    .book-cover {
+        height: auto;
+        width: 150px;
+        border-radius: 10px 0 0 10px;
+    }
+    .book-info {
+        background-color: rgb(161, 161, 161);
+        border-radius: 0 10px 10px 10px;
+        flex: 1;
+    }
+    .book-info span {
+        display: none;
+    }
+    .btn-cart {
+        border-radius: 0;
+    }
+    .book-info .read-more {
+        display: inline;
+    }
+}

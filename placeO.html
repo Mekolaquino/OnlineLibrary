@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <nav>
+        <div class="Brand">
+            <a href="../checkout.html"> BRAND</a>
+        </div>
+        <div>
+            <a href="#"><input type="text" placeholder="Search"></a>
+            <label for="Genre"></label>
+            <button> Search</button>
+            <a href="#">Home</a>
+            <a href="index.html">Bestseller</a>
+            <a href="#">LogIn</a>
+        </div>
+    </nav>
+    <div class="form_container">
+    <form action="" method="">
+        <label for="firstname">Fullname:</label>
+        <input type="text" placeholder="Melvin Aquino" id="firstname" class="input_field"><br>
+        <label for="address">Address:</label>
+        <input type="text" placeholder="511 purok 2" id="addres" class="input_field"><br>
+        <label for="contact">Contact Number:</label>
+        <input type="text" placeholder="0912345678" id="contact" class="input_field"><br>
+
+        <div class="radio"> 
+            <h3>Payment</h3>
+            <label for="fname">Accepted </label>
+            <div class="icon-container">
+              <input type="radio" id="credit" name="pay_method" value="Creditcard" class="input_field">
+            <label>Creditcard</label>
+            <input type="radio" id="cod" name="pay_method" value="cod" class="input_field">
+            <label>COD</label>
+            <input type="radio" id="gcash" name="pay_method" value="gcash" class="input_field">
+            <label>Gcash</label>
+              
+        </div>
+        <select name="region" id="region" class="input_field">
+            <option value="1">Region I</option>
+            <option value="2">Region II</option>
+            <option value="3">Region III</option>
+            <option value="4">Region IV</option>
+            <option value="5">Region V</option>
+        </select><br>
+
+        <button class="input_field">Place Order</button>
+    </form>
+    </div>
+</body>
+</html>

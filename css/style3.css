@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    background-image: url(../css/images.jpg);
+    background-size: cover;
+}
+nav {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(165, 182, 182);
+    position: fixed;
+    padding: 10px;
+    float: left;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+nav a:hover {
+    color: aquamarine;
+    text-decoration: underline;
+    /* background-color: rgba(39, 34, 34, 0.5); */
+    transition: ease-in-out 1s;
+    animation: fade 5s;
+}
+.Brand {
+    float: left;
+    padding-left: 20px;
+}
+select, table, img {
+    border: 5px;
+    border-radius: 10px;
+}
+th {
+    border: 0px;
+    background-color: black;
+}
+table, td {
+    background-color: rgba(3, 3, 3, 0.5);
+    color: white;
+    width: 30vh;
+    text-align: center;
+}
+
+.head {
+    height: 90vh;
+    color: rgb(4, 1, 12);
+
+}
+.color1 {
+    width: 10vh;
+    background-color: green;
+    border-radius: 5px;
+    border: 0;
+}
+.color1:hover {
+    background-color: rgba(19, 21, 22, 1);
+}
+.color2 {
+    width: 15vh;
+    background-color: yellow;
+    border-radius: 5px;
+    border: 0;
+}
+.color2:hover {
+    background-color: rgba(19, 21, 22, 1);
+}
+.color3 {
+    width: 20vh;
+    background-color: red;
+    border-radius: 5px;
+    border: 0;
+}
+.color3:hover {
+    background-color: rgba(19, 21, 22, 1);
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 45px;
+}
+.form_container {
+    padding: 30px;
+    background-color: rgba(145, 216, 192, 0.5);
+    width: 50vh;
+    height: 50vh;
+    margin: auto;
+    position: relative;
+    top: 80px;
+    font-size: large;
+}
+table {
+    margin: 50px;
+    width: 150vh;
+}
+img { 
+    width: 50vh;
+    height: 50vh;
+}
+.input_field {
+
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+}
